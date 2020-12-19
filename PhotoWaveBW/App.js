@@ -18,8 +18,8 @@ class App {
         window.addEventListener('resize', this.resize.bind(this), false);
         this.resize();
 
-        this.radius = 24;
-        this.pixelSize = 24;
+        this.radius = 18;
+        this.pixelSize = 18;
         this.dots = [];
 
         this.isLoaded = false;

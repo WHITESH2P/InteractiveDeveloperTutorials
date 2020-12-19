@@ -17,14 +17,6 @@ export class Dot {
     }
 
     animate(ctx) {
-        ctx.beginPath();
-        ctx.fillStyle = '#fff';
-        ctx.fillRect(
-            this.x - this.pixelSizeHalf,
-            this.y - this.pixelSizeHalf,
-            this.pixelSize, this.pixelSize
-        );
-
         const accel = (this.targetRadius - this.radius) / 2;
         this.radiusV += accel;
         this.radiusV *= BOUNCE;
